@@ -1,5 +1,4 @@
 from fastapi import APIRouter
-
 from .schemas import UserCreate
 import users.crud as crud
 
