@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  fast-api:
+    build:
+      context: ./service
+    ports:
+      - "80:8000"
+    command:
+      - python main.py
+    volumes:
+      - ./service:/service
